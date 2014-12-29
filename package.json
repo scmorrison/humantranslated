@@ -1,18 +1,29 @@
 {
   "name": "humantranslated",
   "description": "Japanese Content and Language Integrated Learning (CLIL) system",
-  "repository": "https://github.com/scmorrison/humantranslated", 
+  "repository": "https://github.com/scmorrison/humantranslated",
+  "author": "Sam Morrison <sam@cnstechgroup.com>",
+  "contributors": [
+    {
+      "name": "Kevin O'Neil",
+      "email": "kevinmoneil@me.com"
+    },
+    {
+      "name": "Shinsuke Miyamoto",
+      "email": "shinminiboo@gmail.com"
+    }
+  ],
   "main": "server.js",
   "dependencies": {
-    "express": "^4.1.1",
-    "mongoose": "^3.8.8",
-    "body-parser": "^1.0.2",
+    "express": "~4.10.6",
+    "mongoose": "~3.8.21",
+    "body-parser": "~1.10.0",
     "bcrypt-nodejs": "0.0.3",
-    "passport": "^0.2.0",
+    "passport": "~0.2.1",
     "passport-http": "^0.2.2",
     "passport-http-bearer": "^1.0.1",
     "oauth2orize": "^1.0.1",
-    "express-session": "^1.6.1",
+    "express-session": "~1.9.3",
     "ejs": "^1.0.0",
     "passport-local": "^1.0.0"
   }

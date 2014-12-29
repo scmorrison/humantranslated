@@ -45,9 +45,8 @@ GPLv2
 Author Information
 ------------------
 
-Sam Morrison @scmorrison
-https://www.twitter.com/samcns
+Sam Morrison [@scmorrison](https://github.com/scmorrison)
 
-Kevin O'Neil @oneilkevin
+Kevin O'Neil [@oneilkevin](https://github.com/oneilkevin)
 
-Shinsuke Miyamoto @jonasuke
+Shinsuke Miyamoto [@jonasuke](https://github.com/jonasuke)
