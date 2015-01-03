@@ -18,5 +18,4 @@ client.post("http://localhost:3333/api/users", args, function(data, res) {
   console.log(data);
   // raw response
   console.log(res);
-  return;
 });

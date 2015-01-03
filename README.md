@@ -29,7 +29,7 @@ npm i
 
 ## 3. Start server
 ```bash
-node server.js
+npm start
 ```
 
 ## 4. Load dummy data (from a separate shell)
