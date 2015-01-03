@@ -1,5 +1,5 @@
 HumanTranslated
-========
+===============
 
 Japanese Content and Language Integrated Learning (CLIL) system.
 
@@ -21,17 +21,21 @@ This is very basic at the moment. Currently it is a simple REST API with flimsy 
 git clone git@github.com:scmorrison/humantranslated.git
 ```
 
-2) Install node modules:
+2. Install node modules:
 ```bash
 cd humantranslated
 npm i
 ```
 
-3) Start server
+3. Start server
 ```bash
 node server.js
 ```
 
+4. Load dummy data
+```bash
+npm run dummy
+```
 TODO
 ----
 
