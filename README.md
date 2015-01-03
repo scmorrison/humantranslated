@@ -32,14 +32,15 @@ npm i
 node server.js
 ```
 
-4. Load dummy data
+4. Load dummy data (from a separate shell)
 ```bash
 npm run dummy
 ```
+
 TODO
 ----
 
-* TBA
+* Build out task runner scripts for npm.
 
 License
 -------
