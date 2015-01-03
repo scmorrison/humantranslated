@@ -18,6 +18,7 @@ var UserSchema = new mongoose.Schema({
 // Execute before each user.save() call
 UserSchema.pre('save', function(callback) {
   var user = this;
+  console.log(user);
 
   // Break out if the password hasn't changed
   if (!user.isModified('password')) return callback();

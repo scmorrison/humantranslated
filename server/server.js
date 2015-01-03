@@ -20,10 +20,13 @@ var app = express();
 // Set view engine to ejs
 app.set('view engine', 'ejs');
 
-// Use the body-parser package in our application
-app.use(bodyParser.urlencoded({
+// Use the body-parser json
+app.use(bodyParser.json({
   extended: true
 }));
+
+// create application/json parser
+//var jsonParser = bodyParser.json()
 
 // Use express session support since OAuth2orize requires it
 app.use(session({ 
@@ -72,4 +75,4 @@ router.route('/api/oauth2/token')
 app.use(router);
 
 // Start the server
-app.listen(3000);
+app.listen(process.env.PORT||3000);
