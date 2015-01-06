@@ -26,7 +26,8 @@
     "express-session": "~1.9.3",
     "ejs": "^1.0.0",
     "passport-local": "^1.0.0",
-    "node-rest-client": "~1.4.3"
+    "node-rest-client": "~1.4.3",
+    "helmet": "~0.5.4"
   },
   "scripts": {
     "dummy": "node scripts/db/dummydata.js",
