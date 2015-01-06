@@ -51,6 +51,11 @@ HTTP Methods
 | /api/stories/:story_id       | GET     | Return single story.             |
 | /api/stories/:story_id       | PUT     | Modify single story.             |
 | /api/stories/:story_id       | DELETE  | Delete single story.             |
+| /api/clients                 | POST    | Create an Oauth2 client.         |
+| /api/clients                 | GET     | Return all Oauth2 clients.       |
+| /api/oauth2/authorize        | GET     | Render authentication dialog.    |
+| /api/oauth2/authorize        | POST    | Submit new auth transaction.     |
+| /api/oauth2/token            | POST    | Request new authorization token. |
 
 TODO
 ----
