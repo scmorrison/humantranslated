@@ -63,7 +63,8 @@ TODO
 * Build out task runner scripts for npm.
 * API endpoints overhall.
 * Implement Oauth2 examples.
-* Implement Oauth2 signup / login for third-party Oauth2 providers (Facebook, Google, etc.)
+* Implement Oauth2 signup / login for third-party Oauth2 providers (Facebook, Google, etc.).
+* Implement a JS coding standard (possibly npm's).
 
 License
 -------
