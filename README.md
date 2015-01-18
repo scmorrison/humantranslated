@@ -8,6 +8,7 @@ Requirements
 
 * node.js
 * npm
+* bower
 * mongodb
 
 Getting started
