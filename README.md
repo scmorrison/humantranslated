@@ -31,31 +31,17 @@ npm i
 
 ## 3. Start server
 ```bash
-npm start
+grunt
 ```
 
 ## 4. Load dummy data (from a separate shell)
 ```bash
-npm run dummy
+# This needs to be reworked to match new structure.
+# npm run dummy
 ```
 
 HTTP Methods
 ------------
-
-| API Endpoint                 | Method  | Description                      |
-|------------------------------|---------|----------------------------------|
-| /api/users                   | POST    | Create a new user.               |
-| /api/users                   | GET     | Return all users.                |
-| /api/stories                 | POST    | Create a new story.              |
-| /api/stories                 | GET     | Return all stories.              |
-| /api/stories/:story_id       | GET     | Return single story.             |
-| /api/stories/:story_id       | PUT     | Modify single story.             |
-| /api/stories/:story_id       | DELETE  | Delete single story.             |
-| /api/clients                 | POST    | Create an Oauth2 client.         |
-| /api/clients                 | GET     | Return all Oauth2 clients.       |
-| /api/oauth2/authorize        | GET     | Render authentication dialog.    |
-| /api/oauth2/authorize        | POST    | Submit new auth transaction.     |
-| /api/oauth2/token            | POST    | Request new authorization token. |
 
 TODO
 ----
