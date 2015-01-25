@@ -48,12 +48,15 @@ module.exports = {
         //'public/lib/foundation/css/foundation.css'
 			],
 			js: [
+        //This is where to put website js files
 				'public/lib/angular/angular.js',
 				'public/lib/angular-resource/angular-resource.js',
 				'public/lib/angular-animate/angular-animate.js',
 				'public/lib/angular-ui-router/release/angular-ui-router.js',
 				'public/lib/angular-ui-utils/ui-utils.js',
-				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js'
+				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
+				'public/lib/headroom.js/dist/headroom.js',
+				'public/lib/headroom.js/dist/angular.headroom.js'
         //'public/lib/angular-foundation/mm-foundation.js',
         //'public/lib/angular-foundation/mm-foundation-tpls.js'
 			]
