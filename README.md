@@ -10,6 +10,7 @@ Requirements
 * npm
 * bower
 * mongodb
+* mecab
 
 Getting started
 ---------------
@@ -18,24 +19,34 @@ This is very basic at the moment. Currently it is a simple REST API with flimsy 
 
 To get started follow the steps below to install the npm modules and import the dummy data. To access the data from the browser open
 
-## 1. Clone the repo:
+1. Clone the repo:
+------------------
 
 ```bash
 git clone git@github.com:scmorrison/humantranslated.git
 ```
 
-## 2. Install node modules:
+2. Install node modules:
+------------------------
 ```bash
 cd humantranslated
 npm i
 ```
 
-## 3. Start server
+3. Install MeCab
+----------------
 ```bash
-grunt
+sudo apt-get install mecab
+````
+
+**Note:** On Debian you might have to create a symlink for libmecab.so:
+
+```bash
+sudo ln -s /usr/lib/libmecab.so.2 /usr/lib/libmecab.so
 ```
 
-## 4. Load dummy data (from a separate shell)
+5. Load dummy data (from a separate shell)
+------------------------------------------
 ```bash
 # This needs to be reworked to match new structure.
 # npm run dummy

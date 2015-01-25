@@ -7,6 +7,14 @@ var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
 /**
+ * Words Schema
+ */
+var Words = new Schema({
+  original: String,
+  furigana: String
+});
+
+/**
  * Story Schema
  */
 var StorySchema = new Schema({
@@ -28,7 +36,9 @@ var StorySchema = new Schema({
 	user: {
 		type: Schema.ObjectId,
 		ref: 'User'
-	}
+	},
+  wordcount: Number,
+  words: [Words]
 });
 
 mongoose.model('Story', StorySchema);
