@@ -69,6 +69,29 @@ License
 
 GPLv2
 
+Installing Mecab on OSX
+------
+
+###Installing Homebrew
+
+The first step is to make sure that you have Homebrew installed. Open the Terminal.app application and copy and paste the following:
+
+    brew -v
+
+If you have not installed Homebrew yet, all you need to do is run the following command:
+  
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+###Installing Mecab
+
+Next, let's install Mecab with our new package manager.
+
+    brew install mecab
+
+We must also install another package mecab-ipadic:
+    
+    brew install mecab-ipadic
+
 Author Information
 ------------------
 
