@@ -55,20 +55,6 @@ sudo ln -s /usr/lib/libmecab.so.2 /usr/lib/libmecab.so
 HTTP Methods
 ------------
 
-TODO
-----
-
-* Build out task runner scripts for npm.
-* API endpoints overhall.
-* Implement Oauth2 examples.
-* Implement Oauth2 signup / login for third-party Oauth2 providers (Facebook, Google, etc.).
-* Implement a JS coding standard (possibly npm's).
-
-License
--------
-
-GPLv2
-
 Installing Mecab on OSX
 ------
 
@@ -91,6 +77,22 @@ Next, let's install Mecab with our new package manager.
 We must also install another package mecab-ipadic:
     
     brew install mecab-ipadic
+
+
+TODO
+----
+
+* Build out task runner scripts for npm.
+* API endpoints overhall.
+* Implement Oauth2 examples.
+* Implement Oauth2 signup / login for third-party Oauth2 providers (Facebook, Google, etc.).
+* Implement a JS coding standard (possibly npm's).
+
+License
+-------
+
+GPLv2
+
 
 Author Information
 ------------------
