@@ -78,6 +78,35 @@ We must also install another package mecab-ipadic:
     
     brew install mecab-ipadic
 
+##Installing Mecab-ipadic via source
+
+If the steps above do not work, you will have to install Mecab from
+source. You can create a directory in your $HOME directory by using the 
+mkdir command:
+
+    mkdir src/
+
+Then CD into the folder and use 
+
+    wget https://mecab.googlecode.com/files/mecab-ipadic-2.7.0-20070801.tar.gz
+
+Note: If you don't have wget installed, then you will need to use the following command:
+
+    brew install wget
+
+Use the tar command to decompress the folder:
+
+    tar xzvf  mecab-ipadic-2.7.0-20070801.tar.gz
+
+A new folder will appear. The last step is to cd back into the Humantranslated direcory and
+copy the script into your $PATH. 
+
+    cp scripts/mecab-config /usr/bin/local
+
+You should now be able to use the mecab command:
+
+    mecab
+
 
 TODO
 ----
