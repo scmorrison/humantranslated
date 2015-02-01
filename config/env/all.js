@@ -57,8 +57,6 @@ module.exports = {
 				'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
 				'public/lib/headroom.js/dist/headroom.js',
 				'public/lib/headroom.js/dist/angular.headroom.js'
-        //'public/lib/angular-foundation/mm-foundation.js',
-        //'public/lib/angular-foundation/mm-foundation-tpls.js'
 			]
 		},
 		css: [

@@ -54,6 +54,7 @@ angular.module('stories').controller('StoriesController', ['$scope', '$statePara
         storyId: $stateParams.storyId
       });
     };
+
   }
 ]);
 
