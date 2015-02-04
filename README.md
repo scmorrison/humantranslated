@@ -131,3 +131,6 @@ Sam Morrison [@scmorrison](https://github.com/scmorrison)
 Kevin O'Neil [@oneilkevin](https://github.com/oneilkevin)
 
 Shinsuke Miyamoto [@jonasuke](https://github.com/jonasuke)
+
+Takanobu Sugiyama [@sugiyama-v](https://github.com/sugiyama-v)
+
