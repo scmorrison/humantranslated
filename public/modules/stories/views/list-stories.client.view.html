@@ -1,26 +1,26 @@
 <section data-ng-controller="StoriesController" data-ng-init="find()">
-	<div class="page-header">
-		<h1>Stories</h1>
-	</div>
-	<div class="list-group">
-    <div class="tabs">
-      <ul>
-          <li ng-click="sortBy='story.title';reverse=!reverse;">Title</li>
-          <li ng-click="sortBy=story.created';reverse=!reverse">Date</li>
-      </ul>
+  <div class="page-header">
+    <h1>Stories</h1>
+  </div>
+  <div class="list-group">
+    <div class="sort">
+        <strong>Sort by: </strong>
+        <a ng-click="sortBy='title';reverse=!reverse;">Title</a> |
+        <a ng-click="sortBy='created';reverse=!reverse">Date</a>
     </div>
-		<a data-ng-repeat="story in stories | orderBy:sortBy:reverse" data-ng-href="#!/stories/{{story._id}}" class="list-group-item">
-			<small class="list-group-item-text">
+    <a data-ng-repeat="story in stories | orderBy:sortBy:reverse" data-ng-href="#!/stories/{{story._id}}"
+    class="list-group-item">
+      <small class="list-group-item-text">
 				Posted on
 				<span data-ng-bind="story.created | date:'mediumDate'"></span>
 				by
 				<span data-ng-bind="story.user.displayName"></span>
 			</small>
-			<h4 class="list-group-item-heading" data-ng-bind="story.title"></h4>
-			<p class="list-group-item-text">{{story.content | limitTo: 200}}...</p>
-		</a>
-	</div>
-	<div class="alert alert-warning text-center" data-ng-if="stories.$resolved && !stories.length">
-		No stories yet, why don't you <a href="/#!/stories/create">create one</a>?
-	</div>
+      <h4 class="list-group-item-heading" data-ng-bind="story.title"></h4>
+      <p class="list-group-item-text">{{story.content | limitTo: 200}}...</p>
+    </a>
+  </div>
+  <div class="alert alert-warning text-center" data-ng-if="stories.$resolved && !stories.length">
+    No stories yet, why don't you <a href="/#!/stories/create">create one</a>?
+  </div>
 </section>

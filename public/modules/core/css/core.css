@@ -31,3 +31,8 @@ pre {
 .headroom--unpinned {top: -100px;}
 .headroom--pinned {top: 0;}
 
+[ng-click],
+[data-ng-click],
+[x-ng-click] {
+    cursor: pointer;
+}
