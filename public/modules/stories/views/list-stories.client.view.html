@@ -5,10 +5,16 @@
   <div class="list-group">
     <div class="sort">
         <strong>Sort by: </strong>
-        <a ng-click="sortBy='title';reverse=!reverse;">Title</a> |
-        <a ng-click="sortBy='created';reverse=!reverse">Date</a>
+        <a ng-click="sortBy('title')">Title</a>
+          <i class="fa fa-sort" ng-if="sortOrder != 'title'"></i>
+          <i class="fa fa-sort-down" ng-if="!(reverse) && sortOrder == 'title'"></i>
+          <i class="fa fa-sort-up" ng-if="reverse && sortOrder == 'title'"></i> |
+        <a ng-click="sortBy('created')">Date</a>
+          <i class="fa fa-sort" ng-if="sortOrder != 'created'"></i>
+          <i class="fa fa-sort-down columnSortIcons" ng-if="!(reverse) && sortOrder == 'created'"></i>
+          <i class="fa fa-sort-up columnSortIcons" ng-if="reverse && sortOrder == 'created'"></i>
     </div>
-    <a data-ng-repeat="story in stories | orderBy:sortBy:reverse" data-ng-href="#!/stories/{{story._id}}"
+    <a data-ng-repeat="story in stories | orderBy:sortOrder:reverse" data-ng-href="#!/stories/{{story._id}}"
     class="list-group-item">
       <small class="list-group-item-text">
 				Posted on
