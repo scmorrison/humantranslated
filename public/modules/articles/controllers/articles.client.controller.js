@@ -54,5 +54,19 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
 				articleId: $stateParams.articleId
 			});
 		};
+
+    $scope.sortBy = function(sortOrder) {
+      $scope.sortOrder = sortOrder;
+      $scope.reverse = !$scope.reverse;
+    };
+
 	}
 ]);
+
+//Filters used for stories content
+angular.module('articles')
+  .filter('newlines', function() {
+    return function(input) {
+      return input.replace(/\n/g, '<br/>');
+    };
+  });
