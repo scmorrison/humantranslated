@@ -40,7 +40,7 @@ humantranslated register --user user.json
 
 ```bash
 # list stories
-humantranslated story list-all
+humantranslated story list
 ```
 
 ```bash
