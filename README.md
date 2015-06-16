@@ -74,22 +74,22 @@ humantranslated category list
 
 ```bash
 # display category
-humantranslated category view CATEGORYNAME
+humantranslated category view --category-name CATEGORYNAME
 ```
 
 ```bash
 # add category
-humantranslated category new CATEGORYNAME.json
+humantranslated category new --category-name CATEGORYNAME
 ```
 
 ```bash
 # modify category
-humantranslated category modify CATEGORYNAME.json
+humantranslated category modify --category-name OLDCATEGORYNAME --new-name NEWCATEGORYNAME
 ```
 
 ```bash
 # delete category
-humantranslated category delete CATEGORYNAME
+humantranslated category delete --category-name CATEGORYNAME
 ```
 
 ```
