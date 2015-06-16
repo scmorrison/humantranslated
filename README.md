@@ -38,39 +38,60 @@ humantranslated register --user user.json
 # Stories
 #
 
+```bash
 # list stories
 humantranslated story list-all
+```
 
+```bash
 # display story
 humantranslated story view --story-id STORYID
+```
 
+```bash
 # add story
 humantranslated story new STORY.json
+```
 
+```bash
 # modify story
 humantranslated story modify --story-id STORYID STORY.json
+```
 
+```bash
 # delete story
 humantranslated story delete --story-id STORYID
+```
 
 #
 # Categories
 # 
 
 # list categories
+```bash
 humantranslated category list
+```
 
+```bash
 # display category
 humantranslated category view CATEGORYNAME
+```
 
+```bash
 # add category
 humantranslated category new CATEGORYNAME.json
+```
 
+```bash
 # modify category
 humantranslated category modify CATEGORYNAME.json
+```
 
+```bash
 # delete category
 humantranslated category delete CATEGORYNAME
+```
+
 ```
 # Example story.json
 ```json
