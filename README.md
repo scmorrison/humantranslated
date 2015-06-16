@@ -14,26 +14,44 @@ The CLI client is the first client to test and integrate new API features.
 humantranslated config
 
 # register for a new account
-humantranslated register
+# POST /api/v1/register
+```json
+// user.json
+{
+  "username": "joedirt",
+  "email": "user@email.com",
+  "password": "HASHED_PASSWORD",
+  "first_name": "Joe",
+  "last_name": "Dirt",
+  "twitter_id" "joedirt",
+  "facebook_id": "joedirt",
+  "github_id": "joedirt",
+  "google_id": "joedirt"
+}
+```
+
+```bash
+humantranslated register --user user.json
+```
 
 #
 # Stories
 #
 
 # list stories
-humantranslated story list
+humantranslated story list-all
 
 # display story
-humantranslated story view STORYID
+humantranslated story view --story-id STORYID
 
 # add story
 humantranslated story new STORY.json
 
 # modify story
-humantranslated story modify STORY.json
+humantranslated story modify --story-id STORYID STORY.json
 
 # delete story
-humantranslated story delete STORYID
+humantranslated story delete --story-id STORYID
 
 #
 # Categories
