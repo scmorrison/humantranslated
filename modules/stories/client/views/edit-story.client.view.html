@@ -5,7 +5,10 @@
 	<div class="col-md-12">
 		<form name="storyForm" class="form-horizontal" data-ng-submit="update()" novalidate>
 			<fieldset>
-				<div class="form-group">
+					<div ng-show="submitted && storyForm.title.$invalid" class="help-block">
+						<p ng-show="storyForm.title.$error.required" class="text-danger">Title is required</p>
+					</div>
+				<div class="form-group" ng-class="{ 'has-error' : submitted && storyForm.title.$invalid}">
 					<label class="control-label" for="title">Title</label>
 					<div class="controls">
 						<input name="title" type="text" data-ng-model="story.title" id="title" class="form-control" placeholder="Title" required>
@@ -15,6 +18,9 @@
 					<label class="control-label" for="content">Content</label>
 					<div class="controls">
 						<textarea name="content" data-ng-model="story.content" id="content" class="form-control" cols="30" rows="10" placeholder="Content"></textarea>
+					</div>
+					<div ng-show="submitted && storyForm.content.$invalid" class="help-block">
+						<p ng-show="storyForm.content.$error.required" class="text-danger">Content is required</p>
 					</div>
 				</div>
 				<div class="form-group">
