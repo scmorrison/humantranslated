@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 var mongoose = require('mongoose'),
-	Schema = mongoose.Schema;
+   	Schema = mongoose.Schema;
 
 /**
  * Words Schema
@@ -40,5 +40,6 @@ var StorySchema = new Schema({
   wordcount: Number,
   words: [Words]
 });
+
 
 mongoose.model('Story', StorySchema);
