@@ -77,7 +77,7 @@ var parseWords = function(words) {
   var words_obj = [];
   var parsed_words = 0;
 
-	// Loop words to build out our words object
+  // Loop words to build out our words object
   _.each(words, function(word) {
     var word_json = filterWord(word);
 
