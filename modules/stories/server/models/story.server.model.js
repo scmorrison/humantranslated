@@ -65,8 +65,8 @@ var filterWord = function(word) {
         furigana: furigana
       };
 
-			// return the new word
-		  return word_json;
+    // return the new word
+      return word_json;
     }
 };
 
@@ -83,11 +83,11 @@ var parseWords = function(words) {
 
     // Only add word once
     if (!_.findWhere(words_obj, word_json)) {
-		  words_obj.push(word_json);
+      words_obj.push(word_json);
     }
   });
 
-	return words_obj;
+  return words_obj;
 };
 
 
@@ -97,9 +97,8 @@ var parseWords = function(words) {
 StorySchema.pre('save', function(next) {
   var words = mecab.parseSync(this.content);
   this.words = parseWords(words);
-	this.wordcount = this.words.length;
-	return next();
-
+  this.wordcount = this.words.length;
+  return next();
 });
 
 mongoose.model('Story', StorySchema);
