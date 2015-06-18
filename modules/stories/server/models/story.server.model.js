@@ -65,7 +65,7 @@ var filterWord = function(word) {
         furigana: furigana
       };
 
-    // return the new word
+      // return the new word
       return word_json;
     }
 };
