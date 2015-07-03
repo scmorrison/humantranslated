@@ -16,5 +16,5 @@ mongoose.connect(function (db) {
 	app.listen(config.port);
 
 	// Logging initialization
-	console.log('MEAN.JS application started on port ' + config.port);
+	console.log('HumanTranslated started on port ' + config.port);
 });

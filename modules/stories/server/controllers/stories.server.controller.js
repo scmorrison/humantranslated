@@ -42,7 +42,7 @@ exports.read = function(req, res) {
 exports.update = function(req, res) {
   var story = req.story;
   story = _.extend(story, req.body);
-
+	console.log(req);
 	story.save(function(err) {
 		if (err) {
 			return res.status(400).send({
