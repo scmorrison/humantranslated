@@ -1,0 +1,13 @@
+<template name="story">
+	<div class="story-detail">
+		<h3>
+      {{ story.title }}
+      <small>by {{ story.getCreator.profile.name }}</small>  
+    </h3>
+		<div class="image" style="background-image: url({{ story.image.url }})"></div>
+		<br>
+		<div class="content">
+			{{{ story.body }}}
+		</div>
+	</div>
+</template>

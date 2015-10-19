@@ -1,0 +1,49 @@
+<template name="layout">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2">
+				<div class="header">
+					{{> header }}
+				</div>
+				<br><br>
+				<div class="content">
+					{{> yield }}
+				</div>
+				<br>
+				<div class="footer">
+					{{> footer }}
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="header">
+	<div class="visible-xs text-center">
+		<br>
+		<a href="{{ RouterLayerPathFor 'home' }}">
+			<img class="img-circle" src="{{ dict 'logo.url' 'http://i.imgur.com/6PeLvIG.png' }}">
+		</a>
+	</div>
+	<div class="texts">
+		<h1>
+			<a href="{{ RouterLayerPathFor 'home' }}">
+				HumanTranslated
+			</a>
+		</h1>
+		<p class="description">
+			Content and Language Integrated Learning (CLIL) system. 
+			<a href="https://github.com/scmorrison/humantranslated">Github</a>.
+		</p>
+	</div>
+</template>
+
+<template name="footer">
+	<hr>
+  <a href="{{ RouterLayerPathFor 'admin' }}">
+    Register / Login
+  </a>
+	<p class="text-muted">
+		<a href="https://github.com/scmorrison/humantranslated">HumanTranslated</a>
+	</p>
+</template>
